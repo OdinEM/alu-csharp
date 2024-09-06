@@ -11,3 +11,9 @@ dotnet new console
 
 # Build the newly created C# project
 dotnet build
+
+# Build the newly created C# project and capture the output
+output=$(dotnet build)
+
+# Print the build output
+echo "$output"

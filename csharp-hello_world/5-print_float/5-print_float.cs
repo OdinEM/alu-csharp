@@ -8,4 +8,3 @@ class Program
         Console.WriteLine("Float: {0:F2}", number);
     }
 }
-

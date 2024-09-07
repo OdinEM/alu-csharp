@@ -4,14 +4,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Use a loop to generate numbers from 0 to 98
+        // Create an empty string to accumulate the results
+        string result = "";
+
+        // Loop from 0 to 98
         for (int i = 0; i <= 98; i++)
         {
-            // Only print '1' if the current number is 1
-            if (i == 1)
-            {
-                Console.Write("1");
-            }
+            // Append each number in decimal and hexadecimal format to the result string
+            result += $"{i} = 0x{i:X}\n";
         }
+
+        // Print the entire result string in one go
+        Console.Write(result);
     }
 }

@@ -1,11 +1,10 @@
 ﻿using System;
 class Program
 {
-    static void Main(string[] args) {
-        string part1 = "object";
-        string part2 = "-oriented ";
-        string part3 = "programming";
-        string part4 = " in C#";
-        Console.WriteLine(part1 + part2 + part3 + part4);
+    static void Main(string[] args)
+    {
+        string p1 = "object", p2 = "-oriented ", p3 = "programming", p4 = " in C#";
+        Console.WriteLine(p1 + p2 + p3 + p4);
     }
 }
+

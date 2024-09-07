@@ -4,17 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Generate a random number
-        Random random = new Random();
-        int number = random.Next(-10000, 10000);
+        // Assign the specific number -98
+        int number = 98;
 
-        // Calculate the last digit of the number
-        int lastDigit = number % 10;
+        // Calculate the last digit
+        int lastDigit = Math.Abs(number % 10);
 
-        // Print the first part of the output
+        // Print the result in the required format
         Console.Write("The last digit of " + number + " is " + lastDigit);
 
-        // Determine and print the corresponding message based on the last digit
+        // Determine which message to print
         if (lastDigit > 5)
         {
             Console.WriteLine(" and is greater than 5");

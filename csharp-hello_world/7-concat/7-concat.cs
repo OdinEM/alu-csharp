@@ -10,4 +10,3 @@ class Program
         Console.WriteLine(result); // Print the result
     }
 }
-

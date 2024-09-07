@@ -7,20 +7,17 @@ class Program
         Random random = new Random();
         int number = random.Next(-100, 101);
 
-        Console.Write($"{number} ");
-
         if (number > 0)
         {
-            Console.WriteLine("is positive");
+            Console.WriteLine($"{number} is positive");
         }
         else if (number < 0)
         {
-            Console.WriteLine("is negative");
+            Console.WriteLine($"{number} is negative");
         }
         else
         {
-            Console.WriteLine("is zero");
+            Console.WriteLine($"{number} is zero");
         }
     }
 }
-

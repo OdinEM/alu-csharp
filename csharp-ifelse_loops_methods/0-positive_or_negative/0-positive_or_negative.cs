@@ -4,8 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Random random = new Random();
-        int number = random.Next(-100, 101);
+        int number;
+
+        number = -98;
 
         if (number > 0)
         {

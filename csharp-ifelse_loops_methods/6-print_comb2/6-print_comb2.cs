@@ -13,7 +13,7 @@ class Program
             // Loop to generate the second digit
             for (int j = i + 1; j < 10; j++)
             {
-                // Append each combination in the required format
+                // Append each combination in the required format with leading zeros
                 output += $"{i:D2}{j:D2}, ";
             }
         }

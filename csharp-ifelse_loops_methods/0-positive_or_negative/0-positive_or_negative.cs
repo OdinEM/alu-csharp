@@ -6,7 +6,11 @@ class Program
     {
         int number;
 
-        number = -98;
+        // For positive case
+        number = 98;
+
+        // For zero case
+        // number = 0;
 
         if (number > 0)
         {

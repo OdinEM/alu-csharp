@@ -9,4 +9,5 @@ cd 1-new_project
 # Initialize a new C# console project
 dotnet new console
 
-dotnet build 
+# Build the C# project
+dotnet build

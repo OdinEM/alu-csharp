@@ -1,12 +1,18 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Create a new directory named 1-new_project
-mkdir -p 1-new_project
+# Directory name
+DIR="1-new_project"
 
-# Navigate into the 1-new_project directory
-cd 1-new_project
+# Create the directory if it does not exist
+if [ ! -d "$DIR" ]; then
+    mkdir "$DIR"
+fi
 
-# Initialize a new C# console project
+# Navigate into the directory
+cd "$DIR"
+
+# Initialize a new C# project
 dotnet new console
 
-dotnet build 
+# Build the C# project
+dotnet build

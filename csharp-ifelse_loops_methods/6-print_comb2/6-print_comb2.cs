@@ -1,5 +1,4 @@
 ﻿using System;
-
 class Program
 {
     static void Main(string[] args)
@@ -17,8 +16,6 @@ class Program
                 output += $"{i:D2}{j:D2}, ";
             }
         }
-
-        // Remove the trailing comma and space, and print the final result followed by a newline
         Console.WriteLine(output.TrimEnd(',', ' '));
     }
 }

@@ -23,7 +23,7 @@ class Program
             {
                 Console.Write(element + " "); // Print each element followed by a space
             }
-            Console.WriteLine(); // New line after each array
+            Console.WriteLine(" "); // Print an additional space after each line
         }
     }
 }

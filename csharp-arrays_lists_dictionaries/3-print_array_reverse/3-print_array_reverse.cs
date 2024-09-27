@@ -4,7 +4,7 @@ class Array
 {
     public static void Reverse(int[] array)
     {
-        if (array == null || array.Length == 0)
+        if (array == null)
         {
             Console.WriteLine();
             return;

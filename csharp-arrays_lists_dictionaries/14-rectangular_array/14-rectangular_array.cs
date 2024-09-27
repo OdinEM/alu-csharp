@@ -19,8 +19,8 @@ class Program
             }
             Console.WriteLine(); // Add a line break after each row
         }
-        
-        // Optional: Print an extra line break at the end
-        Console.WriteLine();
+
+        // Add an extra line break to make total output 56 characters
+        Console.WriteLine(); // This will ensure a total of 56 chars with the new line
     }
 }

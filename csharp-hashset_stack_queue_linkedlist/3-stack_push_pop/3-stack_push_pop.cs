@@ -1,67 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class MyStack
+namespace StackImplementation
 {
-    static void Main(string[] args)
+    public class MyStack<T>
     {
-        Stack<string> aStack = new Stack<string>();
+        private List<T> stack = new List<T>();
 
-        aStack.Push("C");
-        aStack.Push("HTML");
-        aStack.Push("Javascript");
-        aStack.Push("Python");
-        aStack.Push("React");
-        aStack.Push("Ruby");
+        public void Push(T item)
+        {
+            stack.Add(item);
+        }
 
-        foreach (string item in aStack)
-            Console.WriteLine(item);
+        public T Pop()
+        {
+            if (stack.Count == 0)
+            {
+                throw new InvalidOperationException("Stack is empty");
+            }
 
-        Console.WriteLine("------");
+            T item = stack[stack.Count - 1];
+            stack.RemoveAt(stack.Count - 1);
+            return item;
+        }
 
-        MyStack.Info(aStack, "C#", "Javascript");
-
-        Console.WriteLine("------");
-
-        foreach (string item in aStack)
-            Console.WriteLine(item);
+        public int Count
+        {
+            get { return stack.Count; }
+        }
     }
 
-    public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
+    public class Program
     {
-        Console.WriteLine($"Number of items: {aStack.Count}");
-
-        if (aStack.Count == 0)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Stack is empty");
-        }
-        else
-        {
-            Console.WriteLine($"Top item: {aStack.Peek()}");
-        }
+            MyStack<int> stack = new MyStack<int>();
 
-        Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
-
-        // Remove the searched item from the stack if it exists
-        Stack<string> tempStack = new Stack<string>();
-        while (aStack.Count > 0)
-        {
-            string topItem = aStack.Pop();
-            if (topItem != search)
+            Console.WriteLine("Pushing elements onto the stack:");
+            for (int i = 1; i <= 5; i++)
             {
-                tempStack.Push(topItem); // Keep only non-matching items
+                stack.Push(i);
+                Console.WriteLine($"Pushed: {i}");
             }
+
+            Console.WriteLine($"\nStack count: {stack.Count}");
+
+            Console.WriteLine("\nPopping elements from the stack:");
+            while (stack.Count > 0)
+            {
+                int popped = stack.Pop();
+                Console.WriteLine($"Popped: {popped}");
+            }
+
+            Console.WriteLine($"\nFinal stack count: {stack.Count}");
         }
-
-        // Restore the remaining items back to the original stack
-        while (tempStack.Count > 0)
-        {
-            aStack.Push(tempStack.Pop());
-        }
-
-        // Push the new item onto the stack
-        aStack.Push(newItem);
-
-        return aStack;
     }
 }

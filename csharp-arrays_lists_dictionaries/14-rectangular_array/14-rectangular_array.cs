@@ -17,7 +17,7 @@ class Program
             {
                 Console.Write(array[i, j] + " ");
             }
-            Console.WriteLine(); // Move to the next line after printing each row
+            Console.WriteLine(); // Add a line break after each row
         }
     }
 }

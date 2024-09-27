@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 class Dictionary
 {
-    // Method to return the key with the highest score
     public static string BestScore(Dictionary<string, int> myList)
     {
         // Check if the dictionary is empty
@@ -12,11 +11,11 @@ class Dictionary
             return "None";
         }
 
-        // Variables to track the key with the highest value
-        string bestKey = null;
+        // Initialize variables to track the key with the highest value
+        string bestKey = string.Empty;  // Use an empty string instead of null to avoid warnings
         int highestScore = -1;
 
-        // Loop through the dictionary to find the highest score
+        // Loop through the dictionary to find the key with the highest score
         foreach (KeyValuePair<string, int> entry in myList)
         {
             if (entry.Value > highestScore)
@@ -26,6 +25,6 @@ class Dictionary
             }
         }
 
-        return bestKey;
+        return bestKey ?? "None";  // Ensure no null reference return
     }
 }

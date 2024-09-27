@@ -15,10 +15,12 @@ class Program
         {
             for (int j = 0; j < 5; j++)
             {
-                // Print each element with a space, including the last element in the row
                 Console.Write(array[i, j] + " ");
             }
             Console.WriteLine(); // Add a line break after each row
         }
+        
+        // Optional: Print an extra line break at the end
+        Console.WriteLine();
     }
 }

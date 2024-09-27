@@ -1,0 +1,14 @@
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net7.0\1-common_elements.exe
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net7.0\1-common_elements.deps.json
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net7.0\1-common_elements.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net7.0\1-common_elements.dll
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\bin\Debug\net7.0\1-common_elements.pdb
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.dll
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\refint\1-common_elements.dll
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.pdb
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\1-common_elements.genruntimeconfig.cache
+C:\Users\LENOVO\alu-csharp\csharp-hashset_stack_queue_linkedlist\1-common_elements\obj\Debug\net7.0\ref\1-common_elements.dll

@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 
 class MyStack
@@ -40,22 +40,20 @@ class MyStack
             Console.WriteLine($"Top item: {aStack.Peek()}");
         }
 
-        Console.WriteLine($"Stack contains \"{search}\" : {aStack.Contains(search)}");
+        Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
 
-        // Create a temporary stack to hold items
+        // Remove the searched item from the stack if it exists
         Stack<string> tempStack = new Stack<string>();
-
-        // Remove the searched item by popping the stack
         while (aStack.Count > 0)
         {
-            string top = aStack.Pop();
-            if (top != search)
+            string topItem = aStack.Pop();
+            if (topItem != search)
             {
-                tempStack.Push(top);
+                tempStack.Push(topItem); // Keep only non-matching items
             }
         }
 
-        // Restore items back into the original stack
+        // Restore the remaining items back to the original stack
         while (tempStack.Count > 0)
         {
             aStack.Push(tempStack.Pop());

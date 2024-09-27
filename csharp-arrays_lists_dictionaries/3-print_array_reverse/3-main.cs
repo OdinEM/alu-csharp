@@ -9,7 +9,6 @@ class Program
         int[] array3 = {};
         int[] array4 = {98, -10, 0, 972, -42};
 
-        // Test the Reverse method with different arrays
         Array.Reverse(array1);
         Array.Reverse(array2);
         Array.Reverse(array3);

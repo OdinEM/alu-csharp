@@ -1,54 +1,69 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 
 class MyStack
 {
+    static void Main(string[] args)
+    {
+        Stack<string> aStack = new Stack<string>();
+
+        aStack.Push("C");
+        aStack.Push("HTML");
+        aStack.Push("Javascript");
+        aStack.Push("Python");
+        aStack.Push("React");
+        aStack.Push("Ruby");
+
+        foreach (string item in aStack)
+            Console.WriteLine(item);
+
+        Console.WriteLine("------");
+
+        MyStack.Info(aStack, "C#", "Javascript");
+
+        Console.WriteLine("------");
+
+        foreach (string item in aStack)
+            Console.WriteLine(item);
+    }
+
     public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
     {
-        // Print the number of items in the stack
         Console.WriteLine($"Number of items: {aStack.Count}");
 
-        // Print the top item or indicate that the stack is empty
-        if (aStack.Count > 0)
-        {
-            Console.WriteLine($"Top item: {aStack.Peek()}");
-        }
-        else
+        if (aStack.Count == 0)
         {
             Console.WriteLine("Stack is empty");
         }
-
-        // Check if the stack contains the search item
-        bool containsSearch = aStack.Contains(search);
-        Console.WriteLine($"Stack contains \"{search}\": {containsSearch}");
-
-        // Remove items up to and including the search item if found
-        if (containsSearch)
+        else
         {
-            Stack<string> tempStack = new Stack<string>();
+            Console.WriteLine($"Top item: {aStack.Peek()}");
+        }
 
-            // Pop items until we find the search item
-            while (aStack.Count > 0)
-            {
-                string item = aStack.Pop();
-                if (item == search)
-                {
-                    break; // Stop when we find the search item
-                }
-                tempStack.Push(item); // Store items in tempStack
-            }
+        Console.WriteLine($"Stack contains \"{search}\" : {aStack.Contains(search)}");
 
-            // Restore items back to aStack
-            while (tempStack.Count > 0)
+        // Create a temporary stack to hold items
+        Stack<string> tempStack = new Stack<string>();
+
+        // Remove the searched item by popping the stack
+        while (aStack.Count > 0)
+        {
+            string top = aStack.Pop();
+            if (top != search)
             {
-                aStack.Push(tempStack.Pop());
+                tempStack.Push(top);
             }
         }
 
-        // Add the new item to the stack
+        // Restore items back into the original stack
+        while (tempStack.Count > 0)
+        {
+            aStack.Push(tempStack.Pop());
+        }
+
+        // Push the new item onto the stack
         aStack.Push(newItem);
 
-        // Return the modified stack
         return aStack;
     }
 }

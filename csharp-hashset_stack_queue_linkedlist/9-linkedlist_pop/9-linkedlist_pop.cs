@@ -10,8 +10,14 @@ class LList
             return 0;
         }
 
-        int value = myLList.First.Value;
-        myLList.RemoveFirst();
-        return value;
+        LinkedListNode<int>? firstNode = myLList.First;
+        if (firstNode != null)
+        {
+            int value = firstNode.Value;
+            myLList.RemoveFirst();
+            return value;
+        }
+
+        return 0;
     }
 }

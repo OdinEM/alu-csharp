@@ -5,50 +5,51 @@ class MyQueue
 {
     public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
     {
-        // Print the number of items in the queue
+        // Step 1: Print the number of items in aQueue
         Console.WriteLine($"Number of items: {aQueue.Count}");
 
-        // Print the first item or indicate that the queue is empty
-        if (aQueue.Count > 0)
-        {
-            Console.WriteLine($"First item: {aQueue.Peek()}");
-        }
-        else
+        // Step 2: Print the item at the top of aQueue without removing it
+        if (aQueue.Count == 0)
         {
             Console.WriteLine("Queue is empty");
         }
+        else
+        {
+            Console.WriteLine($"First item: {aQueue.Peek()}");
+        }
 
-        // Add the new item to the queue
+        // Step 3: Add the new item to the queue
         aQueue.Enqueue(newItem);
 
-        // Check if the queue contains the search item
+        // Step 4: Check if the queue contains the given item (search)
         bool containsSearch = aQueue.Contains(search);
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
-        // If the queue contains the search item, remove all items up to and including search
+        // Step 5: If aQueue contains the given item, remove all items up to and including search
         if (containsSearch)
         {
             Queue<string> tempQueue = new Queue<string>();
-
-            // Dequeue items until we find the search item
             while (aQueue.Count > 0)
             {
-                string item = aQueue.Dequeue();
-                if (item == search)
+                string currentItem = aQueue.Dequeue();
+                if (currentItem == search)
                 {
-                    break; // Stop when we find the search item
+                    break; // Stop when search item is found and removed
                 }
-                tempQueue.Enqueue(item); // Store items in tempQueue
+                tempQueue.Enqueue(currentItem); // Keep items that come before search
             }
 
-            // Restore items back to aQueue
-            while (tempQueue.Count > 0)
+            // Re-add remaining items back to the original queue
+            while (aQueue.Count > 0)
             {
-                aQueue.Enqueue(tempQueue.Dequeue());
+                tempQueue.Enqueue(aQueue.Dequeue());
             }
+
+            // Replace original queue with the modified one
+            aQueue = tempQueue;
         }
 
-        // Return the modified queue
+        // Step 6: Return the modified queue
         return aQueue;
     }
 }

@@ -25,28 +25,36 @@ class MyQueue
         bool containsSearch = aQueue.Contains(search);
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
-        // Step 5: If aQueue contains the given item, remove all items up to and including search
+        // Step 5: If aQueue contains the search item, remove up to and including search using a single Dequeue
         if (containsSearch)
         {
-            Queue<string> tempQueue = new Queue<string>();
+            // Use Dequeue only once to get the first item
+            string firstItem = aQueue.Dequeue();
+
+            // Create a temporary list to hold the remaining items
+            List<string> tempList = new List<string>();
+            tempList.Add(firstItem); // Add the first item we just dequeued
+
+            // Dequeue only once, now iterate over the rest of the queue
             while (aQueue.Count > 0)
             {
-                string currentItem = aQueue.Dequeue();
+                string currentItem = aQueue.Peek();
                 if (currentItem == search)
                 {
-                    break; // Stop when search item is found and removed
+                    aQueue.Dequeue(); // Remove the search item and stop
+                    break;
                 }
-                tempQueue.Enqueue(currentItem); // Keep items that come before search
+                else
+                {
+                    tempList.Add(aQueue.Dequeue());
+                }
             }
 
-            // Re-add remaining items back to the original queue
-            while (aQueue.Count > 0)
+            // Add remaining items back to the queue
+            foreach (var item in tempList)
             {
-                tempQueue.Enqueue(aQueue.Dequeue());
+                aQueue.Enqueue(item);
             }
-
-            // Replace original queue with the modified one
-            aQueue = tempQueue;
         }
 
         // Step 6: Return the modified queue

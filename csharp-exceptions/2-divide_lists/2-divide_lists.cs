@@ -29,7 +29,7 @@ public class List
             catch (ArgumentOutOfRangeException)
             {
                 Console.WriteLine("Out of range");
-                result.Add(0);
+                break; // Do not add extra 0 to result list when out of range
             }
         }
 

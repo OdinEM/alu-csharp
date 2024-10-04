@@ -1,0 +1,14 @@
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\bin\Debug\net7.0\3-throw_exception.exe
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\bin\Debug\net7.0\3-throw_exception.deps.json
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\bin\Debug\net7.0\3-throw_exception.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\bin\Debug\net7.0\3-throw_exception.dll
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\bin\Debug\net7.0\3-throw_exception.pdb
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.dll
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\refint\3-throw_exception.dll
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.pdb
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\3-throw_exception.genruntimeconfig.cache
+C:\Users\LENOVO\alu-csharp\csharp-exceptions\3-throw_exception\obj\Debug\net7.0\ref\3-throw_exception.dll

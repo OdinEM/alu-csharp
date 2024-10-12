@@ -6,6 +6,8 @@
     <RootNamespace>_0_enemy</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- Enable XML documentation -->
+    <DocumentationFile>bin/Debug/net7.0/0-enemy.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

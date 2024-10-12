@@ -9,3 +9,5 @@ C:\Users\LENOVO\alu-csharp\csharp-tdd\0-add\MyMath\obj\Debug\net7.0\MyMath.dll
 C:\Users\LENOVO\alu-csharp\csharp-tdd\0-add\MyMath\obj\Debug\net7.0\refint\MyMath.dll
 C:\Users\LENOVO\alu-csharp\csharp-tdd\0-add\MyMath\obj\Debug\net7.0\MyMath.pdb
 C:\Users\LENOVO\alu-csharp\csharp-tdd\0-add\MyMath\obj\Debug\net7.0\ref\MyMath.dll
+C:\Users\LENOVO\alu-csharp\csharp-tdd\0-add\MyMath\bin\Debug\net7.0\MyMath.xml
+C:\Users\LENOVO\alu-csharp\csharp-tdd\0-add\MyMath\obj\Debug\net7.0\MyMath.xml

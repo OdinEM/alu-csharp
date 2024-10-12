@@ -1,48 +1,39 @@
+using NUnit.Framework;
+using MyMath;
+
 namespace MyMath.Tests
 {
     [TestFixture]
     public class OperationsTests
     {
         [Test]
-        public void Add_TwoPositiveNumbers_ReturnsCorrectSum()
+        public void Add_TwoPositiveIntegers_ReturnsCorrectSum()
         {
-            // Arrange
-            int a = 5;
-            int b = 7;
-
-            // Act
-            int result = Operations.Add(a, b);
-
-            // Assert
-            Assert.That(result, Is.EqualTo(12));
+            Assert.That(Operations.Add(5, 7), Is.EqualTo(12));
         }
 
         [Test]
-        public void Add_PositiveAndNegativeNumbers_ReturnsCorrectSum()
+        public void Add_TwoNegativeIntegers_ReturnsCorrectSum()
         {
-            // Arrange
-            int a = 5;
-            int b = -3;
-
-            // Act
-            int result = Operations.Add(a, b);
-
-            // Assert
-            Assert.That(result, Is.EqualTo(2));
+            Assert.That(Operations.Add(-5, -7), Is.EqualTo(-12));
         }
 
         [Test]
-        public void Add_TwoNegativeNumbers_ReturnsCorrectSum()
+        public void Add_PositiveAndNegativeIntegers_ReturnsCorrectSum()
         {
-            // Arrange
-            int a = -5;
-            int b = -7;
+            Assert.That(Operations.Add(5, -3), Is.EqualTo(2));
+        }
 
-            // Act
-            int result = Operations.Add(a, b);
+        [Test]
+        public void Add_ZeroAndPositiveInteger_ReturnsPositiveInteger()
+        {
+            Assert.That(Operations.Add(0, 5), Is.EqualTo(5));
+        }
 
-            // Assert
-            Assert.That(result, Is.EqualTo(-12));
+        [Test]
+        public void Add_TwoZeros_ReturnsZero()
+        {
+            Assert.That(Operations.Add(0, 0), Is.EqualTo(0));
         }
     }
 }

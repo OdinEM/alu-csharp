@@ -9,8 +9,8 @@ namespace Enemies
         // Private field 'health' without initial value
         private int health;
 
-        // Private field 'name' with a default value
-        private string name = "No name";
+        // Private field 'name' with a default value in parentheses
+        private string name = "(No name)";
 
         /// <summary>
         /// Default constructor that sets health to 0.

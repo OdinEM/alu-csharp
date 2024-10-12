@@ -1,29 +1,48 @@
-using Xunit;
-using MyMath;
-
 namespace MyMath.Tests
 {
+    [TestFixture]
     public class OperationsTests
     {
-        [Fact]
+        [Test]
         public void Add_TwoPositiveNumbers_ReturnsCorrectSum()
         {
-            int result = Operations.Add(3, 5);
-            Assert.Equal(8, result);
+            // Arrange
+            int a = 5;
+            int b = 7;
+
+            // Act
+            int result = Operations.Add(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(12));
         }
 
-        [Fact]
-        public void Add_PositiveAndNegativeNumber_ReturnsCorrectSum()
+        [Test]
+        public void Add_PositiveAndNegativeNumbers_ReturnsCorrectSum()
         {
-            int result = Operations.Add(10, -3);
-            Assert.Equal(7, result);
+            // Arrange
+            int a = 5;
+            int b = -3;
+
+            // Act
+            int result = Operations.Add(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(2));
         }
 
-        [Fact]
+        [Test]
         public void Add_TwoNegativeNumbers_ReturnsCorrectSum()
         {
-            int result = Operations.Add(-4, -6);
-            Assert.Equal(-10, result);
+            // Arrange
+            int a = -5;
+            int b = -7;
+
+            // Act
+            int result = Operations.Add(a, b);
+
+            // Assert
+            Assert.That(result, Is.EqualTo(-12));
         }
     }
 }

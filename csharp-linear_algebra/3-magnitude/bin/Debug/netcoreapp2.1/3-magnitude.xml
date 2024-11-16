@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>3-magnitude</name>
+    </assembly>
+    <members>
+        <member name="T:VectorMath">
+            <summary>
+            Provides mathematical operations for vectors.
+            </summary>
+        </member>
+        <member name="M:VectorMath.Magnitude(System.Double[])">
+            <summary>
+            Calculates the magnitude (length) of a vector.
+            </summary>
+            <param name="vector">The vector array (2D or 3D)</param>
+            <returns>The magnitude of the vector, rounded to 2 decimal places. Returns -1 if vector is invalid.</returns>
+        </member>
+    </members>
+</doc>

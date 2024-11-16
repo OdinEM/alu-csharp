@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>_3_magnitude</RootNamespace>
-    <DocumentationFile>bin/Debug/netcoreapp2.1/3-magnitude.xml</DocumentationFile>
+    <DocumentationFile>bin/Debug/net7.0/3-magnitude.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\0-pythagoras\\0-pythagoras.csproj",
-      "projectName": "0-pythagoras",
-      "projectPath": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\0-pythagoras\\0-pythagoras.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\csharp-linear_algebra.csproj",
+      "projectName": "csharp-linear_algebra",
+      "projectPath": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\csharp-linear_algebra.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\0-pythagoras\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

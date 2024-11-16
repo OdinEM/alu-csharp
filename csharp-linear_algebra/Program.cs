@@ -15,11 +15,11 @@ class Program
         // Round to two decimal places
         AC = Math.Round(AC, 2);
 
-        // Write result to a text file
+        // Write the result to a text file
         string filePath = "0-pythagoras.txt";
         File.WriteAllText(filePath, AC.ToString());
 
-        // Output to console for confirmation
+        // Output for confirmation
         Console.WriteLine($"The length of AC is {AC} and has been written to {filePath}");
     }
 }

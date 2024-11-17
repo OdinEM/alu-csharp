@@ -20,10 +20,11 @@ public class VectorMath
         double sumOfSquares = 0;
         foreach (double component in vector)
         {
-            sumOfSquares += component * component;
+            sumOfSquares += Math.Pow(component, 2);
         }
 
-        // Return magnitude rounded to 2 decimal places
-        return Math.Round(Math.Sqrt(sumOfSquares), 2);
+        // Calculate and format magnitude
+        double result = Math.Sqrt(sumOfSquares);
+        return Math.Round(result, 2);
     }
 }

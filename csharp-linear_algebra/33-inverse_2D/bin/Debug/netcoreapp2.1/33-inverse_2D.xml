@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>33-inverse_2D</name>
+    </assembly>
+    <members>
+        <member name="T:MainClass">
+            <summary>
+            The main class for testing the MatrixMath.Inverse2D method.
+            </summary>
+        </member>
+        <member name="M:MainClass.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+            <param name="args">The command-line arguments.</param>
+        </member>
+        <member name="T:MatrixMath">
+            <summary>
+            This is the class responsible for matrix mathematics
+            </summary>
+        </member>
+        <member name="M:MatrixMath.Inverse2D(System.Double[0:,0:])">
+            <summary>
+            Public method to perform the inverse of a 2D matrix
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

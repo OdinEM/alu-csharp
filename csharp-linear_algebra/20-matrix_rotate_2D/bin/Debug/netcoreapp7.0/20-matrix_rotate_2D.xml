@@ -4,23 +4,6 @@
         <name>20-matrix_rotate_2D</name>
     </assembly>
     <members>
-        <member name="T:Program">
-            <summary>
-            Main program class for testing matrix rotation.
-            </summary>
-        </member>
-        <member name="M:Program.Main(System.String[])">
-            <summary>
-            Main entry point of the program.
-            </summary>
-            <param name="args">Command line arguments.</param>
-        </member>
-        <member name="M:Program.PrintMatrix(System.Double[0:,0:])">
-            <summary>
-            Prints the contents of a matrix.
-            </summary>
-            <param name="matrix">The matrix to print.</param>
-        </member>
         <member name="T:MatrixMath">
             <summary>
             Class that provides mathematical operations for matrices.

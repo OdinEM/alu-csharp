@@ -1,0 +1,5 @@
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\netcoreapp2.1\20-matrix_rotate_2D.csproj.AssemblyReference.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\netcoreapp2.1\20-matrix_rotate_2D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\netcoreapp2.1\20-matrix_rotate_2D.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\netcoreapp2.1\20-matrix_rotate_2D.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\netcoreapp2.1\20-matrix_rotate_2D.csproj.CoreCompileInputs.cache

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>20-matrix_rotate_2D</name>
+    </assembly>
+    <members>
+        <member name="T:MatrixMath">
+            <summary>
+            Provides mathematical operations for matrices
+            </summary>
+        </member>
+        <member name="M:MatrixMath.Rotate2D(System.Double[0:,0:],System.Double)">
+            <summary>
+            Rotates a square 2D matrix by a given angle in radians
+            </summary>
+            <param name="matrix">The square matrix to rotate</param>
+            <param name="angle">The angle to rotate by (in radians)</param>
+            <returns>The rotated matrix, or a matrix containing -1 if the input is invalid</returns>
+        </member>
+    </members>
+</doc>

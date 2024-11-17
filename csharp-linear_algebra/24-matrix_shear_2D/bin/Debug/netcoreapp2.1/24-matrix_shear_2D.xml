@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>24-matrix_shear_2D</name>
+    </assembly>
+    <members>
+        <member name="T:MainClass">
+            <summary>
+            The main class for testing the MatrixMath.Shear2D method.
+            </summary>
+        </member>
+        <member name="M:MainClass.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+            <param name="args">The command-line arguments.</param>
+        </member>
+        <member name="T:MatrixMath">
+            <summary>
+            This is the class responsible for matrix mathematics
+            </summary>
+        </member>
+        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
+            <summary>
+            Public method to perform Shear of a matrix
+            </summary>
+            <param name="matrix"></param>
+            <param name="direction"></param>
+            <param name="factor"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

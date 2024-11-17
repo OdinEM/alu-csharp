@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>12-dot_product</name>
+    </assembly>
+    <members>
+        <member name="T:VectorMath">
+            <summary>
+            Provides mathematical operations for vectors.
+            </summary>
+        </member>
+        <member name="M:VectorMath.DotProduct(System.Double[],System.Double[])">
+            <summary>
+            Calculates the dot product of two vectors.
+            </summary>
+            <param name="vector1">First vector (must be 2D or 3D).</param>
+            <param name="vector2">Second vector (must be 2D or 3D).</param>
+            <returns>
+            Returns the dot product of the two vectors.
+            Returns -1 if vectors are not the same size or not 2D/3D vectors.
+            </returns>
+        </member>
+    </members>
+</doc>

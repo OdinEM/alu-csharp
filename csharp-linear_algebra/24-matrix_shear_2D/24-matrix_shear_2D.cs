@@ -25,25 +25,23 @@ public class MatrixMath
         if (direction != 'x' && direction != 'y')
             return new double[,] { { -1 } };
 
-        // Define the shear matrix
-        double[,] shearMatrix;
-        if (direction == 'x')
-            shearMatrix = new double[,] { { 1, factor }, { 0, 1 } };
-        else
-            shearMatrix = new double[,] { { 1, 0 }, { factor, 1 } };
-
-        // Perform matrix multiplication
+        // Shear transformation logic
         double[,] result = new double[2, 2];
-        for (int i = 0; i < 2; i++) // Rows
+        if (direction == 'x')
         {
-            for (int j = 0; j < 2; j++) // Columns
-            {
-                result[i, j] = 0;
-                for (int k = 0; k < 2; k++) // Inner dimension
-                {
-                    result[i, j] += matrix[i, k] * shearMatrix[k, j];
-                }
-            }
+            // Shearing in the x-direction: [1, factor; 0, 1]
+            result[0, 0] = matrix[0, 0] + factor * matrix[0, 1];
+            result[0, 1] = matrix[0, 1];
+            result[1, 0] = matrix[1, 0] + factor * matrix[1, 1];
+            result[1, 1] = matrix[1, 1];
+        }
+        else if (direction == 'y')
+        {
+            // Shearing in the y-direction: [1, 0; factor, 1]
+            result[0, 0] = matrix[0, 0];
+            result[0, 1] = matrix[0, 1] + factor * matrix[0, 0];
+            result[1, 0] = matrix[1, 0];
+            result[1, 1] = matrix[1, 1] + factor * matrix[1, 0];
         }
 
         return result;

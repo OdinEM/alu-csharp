@@ -1,49 +1,61 @@
 ﻿using System;
 
-namespace MatrixShear2D
+/// <summary>
+/// Class containing matrix mathematical operations
+/// </summary>
+public class MatrixMath
 {
     /// <summary>
-    /// This class provides methods for matrix operations, specifically for 2D shear transformations.
+    /// Shears a 2D square matrix by a given factor in either X or Y direction.
     /// </summary>
-    public class MatrixMath
+    /// <param name="matrix">The input 2D square matrix to be sheared</param>
+    /// <param name="direction">The direction of shear ('x' or 'y')</param>
+    /// <param name="factor">The shear factor to be applied</param>
+    /// <returns>
+    /// The sheared matrix if successful, or a matrix containing -1 if:
+    /// - The input matrix is not square
+    /// - The direction is not 'x' or 'y'
+    /// </returns>
+    public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
-        /// <summary>
-        /// Applies a shear transformation to a 2D square matrix.
-        /// </summary>
-        /// <param name="matrix">A 2x2 matrix to shear.</param>
-        /// <param name="direction">The direction of shearing ('x' or 'y').</param>
-        /// <param name="factor">The shear factor.</param>
-        /// <returns>The sheared matrix, or a matrix containing -1 for invalid inputs.</returns>
-        public static double[,] Shear2D(double[,] matrix, char direction, double factor)
+        // Check if matrix is null
+        if (matrix == null)
+            return new double[,] { { -1 } };
+
+        // Get matrix dimensions
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+
+        // Check if matrix is square
+        if (rows != cols)
+            return new double[,] { { -1 } };
+
+        // Check if direction is valid
+        direction = char.ToLower(direction);
+        if (direction != 'x' && direction != 'y')
+            return new double[,] { { -1 } };
+
+        // Create result matrix
+        double[,] result = new double[rows, cols];
+
+        // Apply shear transformation
+        for (int i = 0; i < rows; i++)
         {
-            // Check for valid 2x2 matrix
-            if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
-                return new double[,] { { -1 } };
-
-            // Validate direction
-            if (direction != 'x' && direction != 'y')
-                return new double[,] { { -1 } };
-
-            // Shear transformation logic
-            double[,] result = new double[2, 2];
-            if (direction == 'x')
+            for (int j = 0; j < cols; j++)
             {
-                // Shearing in the x-direction: [1, factor; 0, 1]
-                result[0, 0] = Math.Round(matrix[0, 0] + factor * matrix[0, 1], 2);
-                result[0, 1] = Math.Round(matrix[0, 1], 2);
-                result[1, 0] = Math.Round(matrix[1, 0] + factor * matrix[1, 1], 2);
-                result[1, 1] = Math.Round(matrix[1, 1], 2);
+                if (direction == 'x')
+                {
+                    // X-direction shear: x' = x + factor * y
+                    result[i, j] = matrix[i, j] + (factor * i);
+                }
+                else
+                {
+                    // Y-direction shear: y' = y + factor * x
+                    result[i, j] = matrix[i, j] + (factor * j);
+                }
             }
-            else if (direction == 'y')
-            {
-                // Shearing in the y-direction: [1, 0; factor, 1]
-                result[0, 0] = Math.Round(matrix[0, 0], 2);
-                result[0, 1] = Math.Round(matrix[0, 1] + factor * matrix[0, 0], 2);
-                result[1, 0] = Math.Round(matrix[1, 0], 2);
-                result[1, 1] = Math.Round(matrix[1, 1] + factor * matrix[1, 0], 2);
-            }
-
-            return result;
         }
+
+        return result;
     }
 }

@@ -4,19 +4,23 @@
         <name>24-matrix_shear_2D</name>
     </assembly>
     <members>
-        <member name="T:MatrixShear2D.MatrixMath">
+        <member name="T:MatrixMath">
             <summary>
-            This class provides methods for matrix operations, specifically for 2D shear transformations.
+            Class containing matrix mathematical operations
             </summary>
         </member>
-        <member name="M:MatrixShear2D.MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
+        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
             <summary>
-            Applies a shear transformation to a 2D square matrix.
+            Shears a 2D square matrix by a given factor in either X or Y direction.
             </summary>
-            <param name="matrix">A 2x2 matrix to shear.</param>
-            <param name="direction">The direction of shearing ('x' or 'y').</param>
-            <param name="factor">The shear factor.</param>
-            <returns>The sheared matrix, or a matrix containing -1 for invalid inputs.</returns>
+            <param name="matrix">The input 2D square matrix to be sheared</param>
+            <param name="direction">The direction of shear ('x' or 'y')</param>
+            <param name="factor">The shear factor to be applied</param>
+            <returns>
+            The sheared matrix if successful, or a matrix containing -1 if:
+            - The input matrix is not square
+            - The direction is not 'x' or 'y'
+            </returns>
         </member>
     </members>
 </doc>

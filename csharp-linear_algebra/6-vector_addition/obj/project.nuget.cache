@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ga0JJ4hTvhSoPLka27nNRxAPiXGzf8/NB5ElXKrCKIUovU7L+XkVLmftkYS+BxsPj9yxgZB4VlqZ/c9nwPYjbQ==",
+  "dgSpecHash": "RgSRTOENQ5YumnMeTkzgzYMsuakKqajFtK5cjiQ4tzsi914b3QW0I0VCYPThvCctdzjMYvQ+CXtxMyqunuRiYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\alu-csharp\\csharp-linear_algebra\\6-vector_addition\\6-vector_addition.csproj",
-  "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

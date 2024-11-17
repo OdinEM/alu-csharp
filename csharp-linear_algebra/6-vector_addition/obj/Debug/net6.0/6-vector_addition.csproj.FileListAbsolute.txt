@@ -1,0 +1,4 @@
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\6-vector_addition\obj\Debug\net6.0\6-vector_addition.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\6-vector_addition\obj\Debug\net6.0\6-vector_addition.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\6-vector_addition\obj\Debug\net6.0\6-vector_addition.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\6-vector_addition\obj\Debug\net6.0\6-vector_addition.csproj.CoreCompileInputs.cache

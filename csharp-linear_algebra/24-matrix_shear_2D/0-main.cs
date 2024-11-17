@@ -15,10 +15,10 @@ public class MainClass
             { 1, 2 },
             { 3, 4 }
         };
-        double factorX = 1.5;
-        double factorY = 0.5;
+        char direction = 'x';
+        double factor = 1.5;
 
-        double[,] result = MatrixMath.Shear2D(matrix, factorX, factorY);
+        double[,] result = MatrixMath.Shear2D(matrix, direction, factor);
 
         Console.WriteLine("Sheared Matrix:");
         for (int i = 0; i < result.GetLength(0); i++)

@@ -17,19 +17,17 @@
         </member>
         <member name="T:MatrixMath">
             <summary>
-            Provides methods for performing mathematical operations on matrices.
+            This is the class responsible for matrix mathematics
             </summary>
         </member>
-        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Double,System.Double)">
+        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
             <summary>
-            Shears a 2D matrix by given factors.
+            Public method to perform Shear of a matrix
             </summary>
-            <param name="matrix">The 2D matrix to shear.</param>
-            <param name="factorX">The shear factor in the X direction.</param>
-            <param name="factorY">The shear factor in the Y direction.</param>
-            <returns>
-            The sheared matrix, or a matrix containing -1 if the input matrix is not 2x2.
-            </returns>
+            <param name="matrix"></param>
+            <param name="direction"></param>
+            <param name="factor"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

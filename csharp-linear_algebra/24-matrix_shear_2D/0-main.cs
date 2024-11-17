@@ -1,7 +1,7 @@
 using System;
 
 /// <summary>
-/// The main class for testing the MatrixMath.Rotate2D method.
+/// The main class for testing the MatrixMath.Shear2D method.
 /// </summary>
 public class MainClass
 {
@@ -15,11 +15,12 @@ public class MainClass
             { 1, 2 },
             { 3, 4 }
         };
-        double angle = Math.PI / 4; // 45 degrees
+        double factorX = 1.5;
+        double factorY = 0.5;
 
-        double[,] result = MatrixMath.Rotate2D(matrix, angle);
+        double[,] result = MatrixMath.Shear2D(matrix, factorX, factorY);
 
-        Console.WriteLine("Rotated Matrix:");
+        Console.WriteLine("Sheared Matrix:");
         for (int i = 0; i < result.GetLength(0); i++)
         {
             for (int j = 0; j < result.GetLength(1); j++)

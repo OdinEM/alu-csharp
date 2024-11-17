@@ -6,39 +6,44 @@
 public class MatrixMath
 {
     /// <summary>
-    /// Rotates a square 2D matrix by a given angle in radians.
+    /// Shears a 2D matrix by given factors.
     /// </summary>
-    /// <param name="matrix">The square 2D matrix to rotate.</param>
-    /// <param name="angle">The angle in radians to rotate the matrix.</param>
+    /// <param name="matrix">The 2D matrix to shear.</param>
+    /// <param name="factorX">The shear factor in the X direction.</param>
+    /// <param name="factorY">The shear factor in the Y direction.</param>
     /// <returns>
-    /// The rotated matrix, or a matrix containing -1 if the input matrix is not square.
+    /// The sheared matrix, or a matrix containing -1 if the input matrix is not 2x2.
     /// </returns>
-    public static double[,] Rotate2D(double[,] matrix, double angle)
+    public static double[,] Shear2D(double[,] matrix, double factorX, double factorY)
     {
-        // Check if the matrix is square
-        int rows = matrix.GetLength(0);
-        int cols = matrix.GetLength(1);
-        if (rows != cols)
+        // Check if the matrix is 2x2
+        if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
         {
             return new double[,] { { -1 } };
         }
 
-        // Create a new matrix to store the rotated values
-        double[,] rotatedMatrix = new double[rows, cols];
+        // Create the shear matrix
+        double[,] shearMatrix = {
+            { 1, factorX },
+            { factorY, 1 }
+        };
 
-        // Calculate the rotation matrix components
-        double cosAngle = Math.Cos(angle);
-        double sinAngle = Math.Sin(angle);
+        // Create a new matrix to store the sheared values
+        double[,] shearedMatrix = new double[2, 2];
 
-        // Apply the rotation to each element in the matrix
-        for (int i = 0; i < rows; i++)
+        // Apply the shear transformation
+        for (int i = 0; i < 2; i++)
         {
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < 2; j++)
             {
-                rotatedMatrix[i, j] = matrix[i, j] * cosAngle - matrix[i, j] * sinAngle;
+                shearedMatrix[i, j] = 0;
+                for (int k = 0; k < 2; k++)
+                {
+                    shearedMatrix[i, j] += matrix[i, k] * shearMatrix[k, j];
+                }
             }
         }
 
-        return rotatedMatrix;
+        return shearedMatrix;
     }
 }

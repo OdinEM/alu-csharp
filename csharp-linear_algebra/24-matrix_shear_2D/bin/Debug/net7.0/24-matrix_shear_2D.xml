@@ -6,7 +6,7 @@
     <members>
         <member name="T:MainClass">
             <summary>
-            The main class for testing the MatrixMath.Rotate2D method.
+            The main class for testing the MatrixMath.Shear2D method.
             </summary>
         </member>
         <member name="M:MainClass.Main(System.String[])">
@@ -20,14 +20,15 @@
             Provides methods for performing mathematical operations on matrices.
             </summary>
         </member>
-        <member name="M:MatrixMath.Rotate2D(System.Double[0:,0:],System.Double)">
+        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Double,System.Double)">
             <summary>
-            Rotates a square 2D matrix by a given angle in radians.
+            Shears a 2D matrix by given factors.
             </summary>
-            <param name="matrix">The square 2D matrix to rotate.</param>
-            <param name="angle">The angle in radians to rotate the matrix.</param>
+            <param name="matrix">The 2D matrix to shear.</param>
+            <param name="factorX">The shear factor in the X direction.</param>
+            <param name="factorY">The shear factor in the Y direction.</param>
             <returns>
-            The rotated matrix, or a matrix containing -1 if the input matrix is not square.
+            The sheared matrix, or a matrix containing -1 if the input matrix is not 2x2.
             </returns>
         </member>
     </members>

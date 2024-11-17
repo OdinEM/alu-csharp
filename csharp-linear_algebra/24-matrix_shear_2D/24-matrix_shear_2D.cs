@@ -28,7 +28,7 @@ public class MatrixMath
         // Apply the shear transformation
         shearedMatrix[0, 0] = matrix[0, 0] + matrix[0, 1] * factorX;
         shearedMatrix[0, 1] = matrix[0, 1];
-        shearedMatrix[1, 0] = matrix[1, 0] + matrix[1, 1] * factorX;
+        shearedMatrix[1, 0] = matrix[1, 0] + matrix[1, 1] * factorY;
         shearedMatrix[1, 1] = matrix[1, 1];
 
         return shearedMatrix;

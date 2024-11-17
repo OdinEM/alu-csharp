@@ -1,29 +1,38 @@
 ﻿using System;
 
-class MatrixMath
+/// <summary>
+/// Contains methods for performing matrix operations.
+/// </summary>
+public class MatrixMath
 {
+    /// <summary>
+    /// Shears a 2D square matrix by a given shear factor and returns the resulting matrix.
+    /// </summary>
+    /// <param name="matrix">A 2x2 matrix to be sheared.</param>
+    /// <param name="direction">The direction of the shear: 'x' or 'y'.</param>
+    /// <param name="factor">The shear factor to apply.</param>
+    /// <returns>
+    /// A new matrix representing the result of the shear transformation, 
+    /// or a matrix containing -1 if invalid input is provided.
+    /// </returns>
     public static double[,] Shear2D(double[,] matrix, char direction, double factor)
     {
-        // Check if the matrix is a 2x2 square matrix
+        // Check for valid 2x2 matrix
         if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
             return new double[,] { { -1 } };
 
-        // Check if the direction is valid (either 'x' or 'y')
+        // Validate direction
         if (direction != 'x' && direction != 'y')
             return new double[,] { { -1 } };
 
-        // Create the shear matrix
+        // Define the shear matrix
         double[,] shearMatrix;
         if (direction == 'x')
-        {
             shearMatrix = new double[,] { { 1, factor }, { 0, 1 } };
-        }
-        else // direction == 'y'
-        {
+        else
             shearMatrix = new double[,] { { 1, 0 }, { factor, 1 } };
-        }
 
-        // Perform the matrix multiplication
+        // Perform matrix multiplication
         double[,] result = new double[2, 2];
         for (int i = 0; i < 2; i++) // Rows
         {

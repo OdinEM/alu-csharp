@@ -32,17 +32,10 @@ public class MatrixMath
         double[,] shearedMatrix = new double[2, 2];
 
         // Apply the shear transformation
-        for (int i = 0; i < 2; i++)
-        {
-            for (int j = 0; j < 2; j++)
-            {
-                shearedMatrix[i, j] = 0;
-                for (int k = 0; k < 2; k++)
-                {
-                    shearedMatrix[i, j] += matrix[i, k] * shearMatrix[k, j];
-                }
-            }
-        }
+        shearedMatrix[0, 0] = matrix[0, 0] + matrix[0, 1] * factorX;
+        shearedMatrix[0, 1] = matrix[0, 1];
+        shearedMatrix[1, 0] = matrix[1, 0] + matrix[1, 1] * factorX;
+        shearedMatrix[1, 1] = matrix[1, 1];
 
         return shearedMatrix;
     }

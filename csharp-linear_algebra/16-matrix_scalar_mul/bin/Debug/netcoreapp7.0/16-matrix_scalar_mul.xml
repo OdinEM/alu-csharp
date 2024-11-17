@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>16-matrix_scalar_mul</name>
+    </assembly>
+    <members>
+        <member name="T:MatrixMath">
+            <summary>
+            Provides mathematical operations for matrices.
+            </summary>
+        </member>
+        <member name="M:MatrixMath.MultiplyScalar(System.Double[0:,0:],System.Double)">
+            <summary>
+            Multiplies a matrix by a scalar value.
+            </summary>
+            <param name="matrix">The matrix to multiply (must be 2D or 3D).</param>
+            <param name="scalar">The scalar value to multiply the matrix by.</param>
+            <returns>
+            Returns the resulting matrix from multiplying the matrix by the scalar.
+            Returns a matrix containing -1 if the matrix is not 2D or 3D.
+            </returns>
+        </member>
+    </members>
+</doc>

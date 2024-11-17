@@ -4,7 +4,12 @@
         <name>24-matrix_shear_2D</name>
     </assembly>
     <members>
-        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
+        <member name="T:MatrixShear2D.MatrixMath">
+            <summary>
+            This class provides methods for matrix operations, specifically for 2D shear transformations.
+            </summary>
+        </member>
+        <member name="M:MatrixShear2D.MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
             <summary>
             Applies a shear transformation to a 2D square matrix.
             </summary>

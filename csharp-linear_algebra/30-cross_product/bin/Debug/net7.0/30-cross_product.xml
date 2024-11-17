@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>30-cross_product</name>
+    </assembly>
+    <members>
+        <member name="T:MainClass">
+            <summary>
+            The main class for testing the VectorMath.CrossProduct method.
+            </summary>
+        </member>
+        <member name="M:MainClass.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+            <param name="args">The command-line arguments.</param>
+        </member>
+        <member name="T:VectorMath">
+            <summary>
+            This class contains methods for performing operations on vectors.
+            </summary>
+        </member>
+        <member name="M:VectorMath.CrossProduct(System.Double[],System.Double[])">
+            <summary>
+            Calculates the cross product of two 3D vectors.
+            </summary>
+            <param name="vector1">The first 3D vector.</param>
+            <param name="vector2">The second 3D vector.</param>
+            <returns>
+            The resulting cross product vector, or a vector filled with -1 if the input vectors are not 3D.
+            </returns>
+            <exception cref="T:System.ArgumentException">Thrown if either input vector is not of dimension 3.</exception>
+        </member>
+    </members>
+</doc>

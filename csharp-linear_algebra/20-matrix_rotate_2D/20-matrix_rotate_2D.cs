@@ -1,59 +1,47 @@
-﻿using System;
-
-namespace MatrixRotation
+﻿﻿/// <summary>
+/// This is the class responsible for matrix mathematics
+/// </summary>
+class MatrixMath
 {
     /// <summary>
-    /// Provides methods for performing matrix operations.
+    /// Public method to perform rotation of a matrix.
     /// </summary>
-    public class MatrixMath
-    {
-        /// <summary>
-        /// Rotates a 2D matrix by the specified angle in radians.
-        /// </summary>
-        /// <param name="matrix">The input matrix.</param>
-        /// <param name="angle">The angle of rotation in radians.</param>
-        /// <returns>The rotated matrix.</returns>
-        /// <exception cref="ArgumentNullException">Thrown if the input matrix is null.</exception>
-        /// <exception cref="ArgumentException">Thrown if the matrix is not square.</exception>
-        public static double[,] Rotate2D(double[,] matrix, double angle)
-        {
-            if (matrix == null)
-            {
-                throw new ArgumentNullException(nameof(matrix));
-            }
+    /// <param name="matrix"></param>
+    /// <param name="angle"></param>
+    /// <returns></returns>
+    public static double[,] Rotate2D(double[,] matrix, double angle){
+        double cos = Math.Cos(angle);
+        double sin = Math.Sin(angle);
+        var rotation = new double[2,2]{{cos, sin}, {-sin, cos}};
+        var res = new double[matrix.GetLength(0),matrix.GetLength(1)];
+        res = Multiply(matrix, rotation);
+        return res;
+    }
 
-            int n = matrix.GetLength(0);
-            if (n != matrix.GetLength(1))
-            {
-                throw new ArgumentException("Matrix must be square.");
-            }
 
-            double[,] rotatedMatrix = new double[n, n];
-            double cosTheta = Math.Cos(angle);
-            double sinTheta = Math.Sin(angle);
-
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    double x = i - n / 2.0;
-                    double y = j - n / 2.0;
-
-                    double xRotated = x * cosTheta - y * sinTheta + n / 2.0;
-                    double yRotated = x * sinTheta + y * cosTheta + n / 2.0;
-
-                    // Handle edge cases to prevent out-of-bounds indices
-                    int newI = (int)Math.Round(xRotated);
-                    int newJ = (int)Math.Round(yRotated);
-
-                    if (newI >= 0 && newI < n && newJ >= 0 && newJ < n)
-                    {
-                        rotatedMatrix[newI, newJ] = matrix[i, j];
-                    }
-                }
-            }
-
-            return rotatedMatrix;
+    /// <summary>
+    /// Public method to perform multiplication between two matrices.
+    /// </summary>
+    /// <param name="matrix1"></param>
+    /// <param name="matrix2"></param>
+    /// <returns></returns>
+public static double[,] Multiply(double[,] matrix1, double[,] matrix2){
+        if (matrix1.Length == 0 ||
+            matrix2.Length == 0 ||
+            matrix1.GetLength(1) != matrix2.GetLength(0)){
+            return (new double[,]{{-1}});
         }
+        var res = new double[matrix1.GetLength(0),matrix2.GetLength(1)];
+        double sum = 0.0;
+        for (int i = 0; i < matrix1.GetLength(0); i++){
+            for (int j = 0; j < matrix2.GetLength(1); j++){
+                sum = 0;
+                for (int k = 0; k < matrix1.GetLength(1); k++){
+                    sum = Math.Round(sum + (matrix1[i,k] * matrix2[k, j]), 2);
+                }
+                res[i, j] = Math.Round(sum, 2);
+            }
+        }
+        return res;  
     }
 }

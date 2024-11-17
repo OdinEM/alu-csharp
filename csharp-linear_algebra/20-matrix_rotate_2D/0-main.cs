@@ -1,26 +1,32 @@
 using System;
 
-namespace MatrixRotation
+/// <summary>
+/// The main class for testing the MatrixMath.Rotate2D method.
+/// </summary>
+public class MainClass
 {
-    class Program
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    /// <param name="args">The command-line arguments.</param>
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        double[,] matrix = {
+            { 1, 2 },
+            { 3, 4 }
+        };
+        double angle = Math.PI / 4; // 45 degrees
+
+        double[,] result = MatrixMath.Rotate2D(matrix, angle);
+
+        Console.WriteLine("Rotated Matrix:");
+        for (int i = 0; i < result.GetLength(0); i++)
         {
-            double[,] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-            double angle = Math.PI / 2; // 90 degrees
-
-            double[,] rotatedMatrix = MatrixMath.Rotate2D(matrix, angle);
-
-            // Print the rotated matrix
-            for (int i = 0; i < rotatedMatrix.GetLength(0); i++)
+            for (int j = 0; j < result.GetLength(1); j++)
             {
-                for (int j = 0; j < rotatedMatrix.GetLength(1); j++)
-                {
-                    Console.Write(rotatedMatrix[i, j] + " ");
-                }
-                Console.WriteLine();   
-
+                Console.Write(result[i, j] + " ");
             }
+            Console.WriteLine();
         }
     }
 }

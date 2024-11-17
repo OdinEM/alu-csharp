@@ -1,0 +1,15 @@
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\netcoreapp7.0\14-matrix_addition.exe
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\netcoreapp7.0\14-matrix_addition.deps.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\netcoreapp7.0\14-matrix_addition.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\netcoreapp7.0\14-matrix_addition.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\netcoreapp7.0\14-matrix_addition.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\bin\Debug\netcoreapp7.0\14-matrix_addition.xml
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\refint\14-matrix_addition.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\14-matrix_addition.genruntimeconfig.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\14-matrix_addition\obj\Debug\netcoreapp7.0\ref\14-matrix_addition.dll

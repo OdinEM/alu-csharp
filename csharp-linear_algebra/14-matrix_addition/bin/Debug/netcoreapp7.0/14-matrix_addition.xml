@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>14-matrix_addition</name>
+    </assembly>
+    <members>
+        <member name="T:MatrixMath">
+            <summary>
+            Provides mathematical operations for matrices.
+            </summary>
+        </member>
+        <member name="M:MatrixMath.Add(System.Double[0:,0:],System.Double[0:,0:])">
+            <summary>
+            Adds two matrices of the same size.
+            </summary>
+            <param name="matrix1">First matrix (must be 2D or 3D).</param>
+            <param name="matrix2">Second matrix (must be 2D or 3D).</param>
+            <returns>
+            Returns the resulting matrix from adding the two matrices.
+            Returns a matrix containing -1 if matrices are not the same size or not 2D/3D matrices.
+            </returns>
+        </member>
+    </members>
+</doc>

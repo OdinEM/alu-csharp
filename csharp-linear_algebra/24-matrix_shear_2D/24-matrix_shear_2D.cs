@@ -1,61 +1,44 @@
 ﻿using System;
 
 /// <summary>
-/// Class containing matrix mathematical operations
+/// Provides methods for performing mathematical operations on matrices.
 /// </summary>
 public class MatrixMath
 {
     /// <summary>
-    /// Shears a 2D square matrix by a given factor in either X or Y direction.
+    /// Rotates a square 2D matrix by a given angle in radians.
     /// </summary>
-    /// <param name="matrix">The input 2D square matrix to be sheared</param>
-    /// <param name="direction">The direction of shear ('x' or 'y')</param>
-    /// <param name="factor">The shear factor to be applied</param>
+    /// <param name="matrix">The square 2D matrix to rotate.</param>
+    /// <param name="angle">The angle in radians to rotate the matrix.</param>
     /// <returns>
-    /// The sheared matrix if successful, or a matrix containing -1 if:
-    /// - The input matrix is not square
-    /// - The direction is not 'x' or 'y'
+    /// The rotated matrix, or a matrix containing -1 if the input matrix is not square.
     /// </returns>
-    public static double[,] Shear2D(double[,] matrix, char direction, double factor)
+    public static double[,] Rotate2D(double[,] matrix, double angle)
     {
-        // Check if matrix is null
-        if (matrix == null)
-            return new double[,] { { -1 } };
-
-        // Get matrix dimensions
+        // Check if the matrix is square
         int rows = matrix.GetLength(0);
         int cols = matrix.GetLength(1);
-
-        // Check if matrix is square
         if (rows != cols)
+        {
             return new double[,] { { -1 } };
+        }
 
-        // Check if direction is valid
-        direction = char.ToLower(direction);
-        if (direction != 'x' && direction != 'y')
-            return new double[,] { { -1 } };
+        // Create a new matrix to store the rotated values
+        double[,] rotatedMatrix = new double[rows, cols];
 
-        // Create result matrix
-        double[,] result = new double[rows, cols];
+        // Calculate the rotation matrix components
+        double cosAngle = Math.Cos(angle);
+        double sinAngle = Math.Sin(angle);
 
-        // Apply shear transformation
+        // Apply the rotation to each element in the matrix
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < cols; j++)
             {
-                if (direction == 'x')
-                {
-                    // X-direction shear: x' = x + factor * y
-                    result[i, j] = matrix[i, j] + (factor * i);
-                }
-                else
-                {
-                    // Y-direction shear: y' = y + factor * x
-                    result[i, j] = matrix[i, j] + (factor * j);
-                }
+                rotatedMatrix[i, j] = matrix[i, j] * cosAngle - matrix[i, j] * sinAngle;
             }
         }
 
-        return result;
+        return rotatedMatrix;
     }
 }

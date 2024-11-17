@@ -4,22 +4,30 @@
         <name>24-matrix_shear_2D</name>
     </assembly>
     <members>
-        <member name="T:MatrixMath">
+        <member name="T:MainClass">
             <summary>
-            Class containing matrix mathematical operations
+            The main class for testing the MatrixMath.Rotate2D method.
             </summary>
         </member>
-        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
+        <member name="M:MainClass.Main(System.String[])">
             <summary>
-            Shears a 2D square matrix by a given factor in either X or Y direction.
+            The main entry point for the application.
             </summary>
-            <param name="matrix">The input 2D square matrix to be sheared</param>
-            <param name="direction">The direction of shear ('x' or 'y')</param>
-            <param name="factor">The shear factor to be applied</param>
+            <param name="args">The command-line arguments.</param>
+        </member>
+        <member name="T:MatrixMath">
+            <summary>
+            Provides methods for performing mathematical operations on matrices.
+            </summary>
+        </member>
+        <member name="M:MatrixMath.Rotate2D(System.Double[0:,0:],System.Double)">
+            <summary>
+            Rotates a square 2D matrix by a given angle in radians.
+            </summary>
+            <param name="matrix">The square 2D matrix to rotate.</param>
+            <param name="angle">The angle in radians to rotate the matrix.</param>
             <returns>
-            The sheared matrix if successful, or a matrix containing -1 if:
-            - The input matrix is not square
-            - The direction is not 'x' or 'y'
+            The rotated matrix, or a matrix containing -1 if the input matrix is not square.
             </returns>
         </member>
     </members>

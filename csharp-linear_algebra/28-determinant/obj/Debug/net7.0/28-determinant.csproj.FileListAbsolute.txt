@@ -1,0 +1,15 @@
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net7.0\28-determinant.exe
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net7.0\28-determinant.deps.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net7.0\28-determinant.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net7.0\28-determinant.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net7.0\28-determinant.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\bin\Debug\net7.0\28-determinant.xml
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\refint\28-determinant.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\28-determinant.genruntimeconfig.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\28-determinant\obj\Debug\net7.0\ref\28-determinant.dll

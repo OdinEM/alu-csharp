@@ -1,0 +1,15 @@
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\bin\Debug\net7.0\20-matrix_rotate_2D.exe
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\bin\Debug\net7.0\20-matrix_rotate_2D.xml
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\bin\Debug\net7.0\20-matrix_rotate_2D.deps.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\bin\Debug\net7.0\20-matrix_rotate_2D.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\bin\Debug\net7.0\20-matrix_rotate_2D.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\bin\Debug\net7.0\20-matrix_rotate_2D.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\refint\20-matrix_rotate_2D.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\20-matrix_rotate_2D.genruntimeconfig.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\20-matrix_rotate_2D\obj\Debug\net7.0\ref\20-matrix_rotate_2D.dll

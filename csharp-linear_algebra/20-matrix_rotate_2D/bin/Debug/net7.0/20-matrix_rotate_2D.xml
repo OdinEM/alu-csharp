@@ -4,13 +4,20 @@
         <name>20-matrix_rotate_2D</name>
     </assembly>
     <members>
+        <member name="T:MatrixRotation.MatrixMath">
+            <summary>
+            Provides methods for performing matrix operations.
+            </summary>
+        </member>
         <member name="M:MatrixRotation.MatrixMath.Rotate2D(System.Double[0:,0:],System.Double)">
             <summary>
             Rotates a 2D matrix by the specified angle in radians.
             </summary>
             <param name="matrix">The input matrix.</param>
             <param name="angle">The angle of rotation in radians.</param>
-            <returns>The rotated matrix, or a matrix containing -1 for invalid input.</returns>
+            <returns>The rotated matrix.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if the input matrix is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if the matrix is not square.</exception>
         </member>
     </members>
 </doc>

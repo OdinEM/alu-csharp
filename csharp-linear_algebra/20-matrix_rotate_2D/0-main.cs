@@ -1,31 +1,26 @@
 using System;
 
-class Program
+namespace MatrixRotation
 {
-    static void Main(string[] args)
+    class Program
     {
-        double[,] matrix = new double[,] {
-            { 2, -1 },
-            { 4, -3 }
-        };
-        double angle = Math.PI / 2;  // 90 degrees
-
-        double[,] rotated = MatrixMath.Rotate2D(matrix, angle);
-        PrintMatrix(rotated);
-    }
-
-    static void PrintMatrix(double[,] matrix)
-    {
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        static void Main(string[] args)
         {
-            for (int j = 0; j < matrix.GetLength(1); j++)
+            double[,] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            double angle = Math.PI / 2; // 90 degrees
+
+            double[,] rotatedMatrix = MatrixMath.Rotate2D(matrix, angle);
+
+            // Print the rotated matrix
+            for (int i = 0; i < rotatedMatrix.GetLength(0); i++)
             {
-                if (j == matrix.GetLength(1) - 1)
-                    Console.Write($"{matrix[i, j]}");
-                else
-                    Console.Write($"{matrix[i, j]}, ");
+                for (int j = 0; j < rotatedMatrix.GetLength(1); j++)
+                {
+                    Console.Write(rotatedMatrix[i, j] + " ");
+                }
+                Console.WriteLine();   
+
             }
-            Console.WriteLine();
         }
     }
 }

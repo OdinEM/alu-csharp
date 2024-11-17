@@ -1,40 +1,59 @@
 ﻿using System;
 
-/// <summary>
-/// Class that provides mathematical operations for matrices.
-/// </summary>
-public class MatrixMath
+namespace MatrixRotation
 {
     /// <summary>
-    /// Rotates a square 2D matrix by a given angle in radians.
+    /// Provides methods for performing matrix operations.
     /// </summary>
-    /// <param name="matrix">The square matrix to rotate.</param>
-    /// <param name="angle">The angle to rotate by (in radians).</param>
-    /// <returns>The rotated matrix, or a matrix containing -1 if the input is invalid.</returns>
-    public static double[,] Rotate2D(double[,] matrix, double angle)
+    public class MatrixMath
     {
-        if (matrix == null || matrix.GetLength(0) != matrix.GetLength(1))
+        /// <summary>
+        /// Rotates a 2D matrix by the specified angle in radians.
+        /// </summary>
+        /// <param name="matrix">The input matrix.</param>
+        /// <param name="angle">The angle of rotation in radians.</param>
+        /// <returns>The rotated matrix.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if the input matrix is null.</exception>
+        /// <exception cref="ArgumentException">Thrown if the matrix is not square.</exception>
+        public static double[,] Rotate2D(double[,] matrix, double angle)
         {
-            return new double[,] { { -1 } };
-        }
-
-        int size = matrix.GetLength(0);
-        double[,] result = new double[size, size];
-
-        // Calculate rotation matrix components
-        double cos = Math.Round(Math.Cos(angle), 2);
-        double sin = Math.Round(Math.Sin(angle), 2);
-
-        // For each element in the matrix
-        for (int i = 0; i < size; i++)
-        {
-            for (int j = 0; j < size; j++)
+            if (matrix == null)
             {
-                // For 90 degrees rotation: cos = 0, sin = 1
-                result[i, j] = Math.Round(matrix[i, j] * -sin + matrix[i, j] * cos, 2);
+                throw new ArgumentNullException(nameof(matrix));
             }
-        }
 
-        return result;
+            int n = matrix.GetLength(0);
+            if (n != matrix.GetLength(1))
+            {
+                throw new ArgumentException("Matrix must be square.");
+            }
+
+            double[,] rotatedMatrix = new double[n, n];
+            double cosTheta = Math.Cos(angle);
+            double sinTheta = Math.Sin(angle);
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    double x = i - n / 2.0;
+                    double y = j - n / 2.0;
+
+                    double xRotated = x * cosTheta - y * sinTheta + n / 2.0;
+                    double yRotated = x * sinTheta + y * cosTheta + n / 2.0;
+
+                    // Handle edge cases to prevent out-of-bounds indices
+                    int newI = (int)Math.Round(xRotated);
+                    int newJ = (int)Math.Round(yRotated);
+
+                    if (newI >= 0 && newI < n && newJ >= 0 && newJ < n)
+                    {
+                        rotatedMatrix[newI, newJ] = matrix[i, j];
+                    }
+                }
+            }
+
+            return rotatedMatrix;
+        }
     }
 }

@@ -27,14 +27,14 @@
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp7.0"
+        "net7.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
-          "targetAlias": "netcoreapp7.0",
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -46,7 +46,7 @@
     },
     "frameworks": {
       "net7.0": {
-        "targetAlias": "netcoreapp7.0",
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",

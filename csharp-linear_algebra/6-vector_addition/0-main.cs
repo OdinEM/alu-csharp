@@ -1,14 +1,7 @@
 using System;
 
-/// <summary>
-/// Main program class for testing vector addition.
-/// </summary>
 class Program
 {
-    /// <summary>
-    /// The main entry point for the application.
-    /// </summary>
-    /// <param name="args">Command line arguments.</param>
     static void Main(string[] args)
     {
         // Test 2D vectors
@@ -35,10 +28,6 @@ class Program
         PrintVector(result3);
     }
 
-    /// <summary>
-    /// Prints a vector to the console in a readable format.
-    /// </summary>
-    /// <param name="vector">The vector to print.</param>
     static void PrintVector(double[] vector)
     {
         Console.Write("(");

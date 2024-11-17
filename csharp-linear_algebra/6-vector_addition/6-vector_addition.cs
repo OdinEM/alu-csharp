@@ -3,7 +3,7 @@
 /// <summary>
 /// Provides mathematical operations for vectors.
 /// </summary>
-public class VectorMath
+class VectorMath
 {
     /// <summary>
     /// Adds two vectors together.

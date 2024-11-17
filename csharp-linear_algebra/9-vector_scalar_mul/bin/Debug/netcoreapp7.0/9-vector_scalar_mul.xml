@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>9-vector_scalar_mul</name>
+    </assembly>
+    <members>
+        <member name="T:VectorMath">
+            <summary>
+            Provides mathematical operations for vectors.
+            </summary>
+        </member>
+        <member name="M:VectorMath.Multiply(System.Double[],System.Double)">
+            <summary>
+            Multiplies a vector by a scalar value.
+            </summary>
+            <param name="vector">The input vector (must be 2D or 3D).</param>
+            <param name="scalar">The scalar value to multiply the vector by.</param>
+            <returns>
+            Returns a new vector where each component is multiplied by the scalar.
+            Returns a vector containing -1 if the input vector is invalid (not 2D or 3D).
+            </returns>
+        </member>
+    </members>
+</doc>

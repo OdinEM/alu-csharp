@@ -10,3 +10,6 @@ C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\obj\Debug\net7.0\3-
 C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\obj\Debug\net7.0\refint\3-magnitude.dll
 C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\obj\Debug\net7.0\3-magnitude.pdb
 C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\obj\Debug\net7.0\ref\3-magnitude.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\bin\Debug\net7.0\3-magnitude.exe
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\bin\Debug\net7.0\3-magnitude.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\3-magnitude\obj\Debug\net7.0\3-magnitude.genruntimeconfig.cache

@@ -22,12 +22,6 @@ public class MatrixMath
             return new double[,] { { -1 } };
         }
 
-        // Create the shear matrix
-        double[,] shearMatrix = {
-            { 1, factorX },
-            { factorY, 1 }
-        };
-
         // Create a new matrix to store the sheared values
         double[,] shearedMatrix = new double[2, 2];
 

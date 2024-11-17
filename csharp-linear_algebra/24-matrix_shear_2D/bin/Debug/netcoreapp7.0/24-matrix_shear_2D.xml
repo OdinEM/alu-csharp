@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>24-matrix_shear_2D</name>
+    </assembly>
+    <members>
+        <member name="T:MatrixMath">
+            <summary>
+            Contains methods for performing matrix operations.
+            </summary>
+        </member>
+        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
+            <summary>
+            Shears a 2D square matrix by a given shear factor and returns the resulting matrix.
+            </summary>
+            <param name="matrix">A 2x2 matrix to be sheared.</param>
+            <param name="direction">The direction of the shear: 'x' or 'y'.</param>
+            <param name="factor">The shear factor to apply.</param>
+            <returns>
+            A new matrix representing the result of the shear transformation, 
+            or a matrix containing -1 if invalid input is provided.
+            </returns>
+        </member>
+    </members>
+</doc>

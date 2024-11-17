@@ -1,0 +1,15 @@
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\bin\Debug\netcoreapp7.0\24-matrix_shear_2D.exe
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\bin\Debug\netcoreapp7.0\24-matrix_shear_2D.xml
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\bin\Debug\netcoreapp7.0\24-matrix_shear_2D.deps.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\bin\Debug\netcoreapp7.0\24-matrix_shear_2D.runtimeconfig.json
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\bin\Debug\netcoreapp7.0\24-matrix_shear_2D.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\bin\Debug\netcoreapp7.0\24-matrix_shear_2D.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.AssemblyInfoInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.AssemblyInfo.cs
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\refint\24-matrix_shear_2D.dll
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.pdb
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\24-matrix_shear_2D.genruntimeconfig.cache
+C:\Users\LENOVO\alu-csharp\csharp-linear_algebra\24-matrix_shear_2D\obj\Debug\netcoreapp7.0\ref\24-matrix_shear_2D.dll

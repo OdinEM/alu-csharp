@@ -1,6 +1,0 @@
-C:\Users\LENOVO\alu-csharp\csharp-generics\0-queue\obj\Debug\netcoreapp2.1\0-queue.csproj.AssemblyReference.cache
-C:\Users\LENOVO\alu-csharp\csharp-generics\0-queue\obj\Debug\netcoreapp2.1\0-queue.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\LENOVO\alu-csharp\csharp-generics\0-queue\obj\Debug\netcoreapp2.1\0-queue.AssemblyInfoInputs.cache
-C:\Users\LENOVO\alu-csharp\csharp-generics\0-queue\obj\Debug\netcoreapp2.1\0-queue.AssemblyInfo.cs
-C:\Users\LENOVO\alu-csharp\csharp-generics\0-queue\obj\Debug\netcoreapp2.1\0-queue.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\alu-csharp\csharp-generics\0-queue\obj\Debug\netcoreapp2.1\0-queue.sourcelink.json
